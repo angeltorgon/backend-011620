@@ -6,6 +6,8 @@ server.get('/', (req, res) => {
 	res.send('<h1>Welcome to my server!</h1>')
 })
 
+server.use(express.json());
+
 server.use('/users', usersRoute);
 
 
